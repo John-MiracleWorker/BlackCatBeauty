@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Base styles */
+body {
+  background-color: #0A3327; /* Darker green to match logo more closely */
+  font-family: 'Montserrat', sans-serif;
+  color: #F5F5F5;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #D8A28C;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Art Nouveau inspired decorative elements */
+.decorative-border {
+  border: 2px solid #D8A28C;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.decorative-border::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #0A3327;
+  border: 2px solid #D8A28C;
+  border-radius: 50%;
+}
+
+/* Placeholder image styling */
+.placeholder-image {
+  background-color: rgba(216, 162, 140, 0.15);
+  border: 3px dashed rgba(216, 162, 140, 0.5);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  color: #D8A28C;
+  font-style: italic;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #E63E24;
+  color: #F5F5F5;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: rgba(230, 62, 36, 0.9);
+}
+
+/* Navigation styling */
+.nav-link {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.05em;
+}
+
+.nav-link.active {
+  background-color: #D8A28C;
+  color: #0A3327;
+}
+
+/* Content container */
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer styling */
+footer {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Art nouveau decorative elements */
+.art-nouveau-divider {
+  height: 30px;
+  background-image: url('/assets/divider.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 2rem 0;
+}
+
+/* Service cards */
+.service-card {
+  background-color: rgba(10, 51, 39, 0.7);
+  border: 1px solid rgba(216, 162, 140, 0.3);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+
+.service-card:hover {
+  border-color: rgba(216, 162, 140, 0.7);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Price list styling */
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(216, 162, 140, 0.2);
+}
+
+.price-item:last-child {
+  border-bottom: none;
+}
+
+.price-value {
+  font-weight: 600;
+  color: #D8A28C;
+}
